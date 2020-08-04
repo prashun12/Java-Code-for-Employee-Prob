@@ -1,0 +1,31 @@
+public class EmpWageBuilderUC5 {
+   public static final int isPartTime = 1;
+   public static final int isFullTime = 2;
+   public static final int empRatePerHr = 20;
+   public static final int noOfWorkingDays = 2;
+
+   public static void main(String[] args) {
+         int emphrs = 0;
+         int empwage = 0;
+         int totalempwages = 0;
+
+         for (int day = 0; day < noOfWorkingDays; day++) {
+             int empcheck = (int) Math.floor(Math.random() * 10 ) * 3;
+                         switch (empcheck) {
+                           case isPartTime:
+                                emphrs = 4;
+                                     break;
+                           case isFullTime:
+                                emphrs = 8;
+                                      break;
+                          default:
+                                  emphrs = 0;
+}
+            empwage = emphrs * empRatePerHr;
+            totalempwages += empwage;
+            System.out.println("Emp Wage: " + empwage);
+            }
+            System.out.println("Total Emp Wage: " + totalempwages);
+}
+   }
+
