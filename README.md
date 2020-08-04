@@ -1,1 +1,2 @@
-# Java-Code-for-Employee-Prob
+Welcome to Employee
+Wage Computation.
