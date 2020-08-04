@@ -1,0 +1,20 @@
+public class EmpWageBuilderUC3 {
+  public static void main(String[] args) {
+
+     int isPartTime = 1;
+     int isFullTime = 2;
+     int empRatePerHr = 20;
+
+     int empwage = 0;
+     int emphrs = 0;
+     double empcheck = Math.floor(Math.random() * 10 ) % 3;
+     if (empcheck == isPartTime)
+                 emphrs = 4;
+     else if (empcheck == isFullTime)
+                  emphrs = 8;
+     else
+                  emphrs = 0;
+     empwage = emphrs * empRatePerHr;
+     System.out.println("Emp Wage is: " + empwage);
+}
+   }
